@@ -1,0 +1,34 @@
+[
+  {
+    "id": 342,
+    "name": "Loren",
+    "title": "PhD Component Composition",
+    "email": "loren@codemore.io",
+    "avatar": "avatar_loren1.jpg",
+    "notes": ""
+  },
+  {
+    "id": 859,
+    "name": "Max",
+    "title": "MA Flexbox",
+    "email": "max@handsomecat.com",
+    "avatar": "max.jpg",
+    "notes": ""
+  },
+  {
+    "id": 902,
+    "name": "Peanut",
+    "title": "Madame of Leisure",
+    "email": "peanut@cutiepie.com",
+    "avatar": "peanut.jpg",
+    "notes": ""
+  },
+  {
+    "id": 4138,
+    "name": "Bobby",
+    "title": "The Most Beautiful Cat in the World",
+    "email": "bobby@modelcat.com",
+    "avatar": "bobby.jpg",
+    "notes": ""
+  }
+]
