@@ -55,23 +55,26 @@ class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <Controls
-          red={this.state.red}
-          green={this.state.green}
-          blue={this.state.blue}
-          alpha={this.state.alpha}
-          onRedChange={this.handleRedChange}
-          onGreenChange={this.handleGreenChange}
-          onBlueChange={this.handleBlueChange}
-          onAlphaChange={this.handleAlphaChange}
-          onRadiusChangeFromControlComponent={this.handleRadiusChange}
-          radiusOnControl={this.state.radius} />
-        <Circle
-          radius={this.state.radius}
-          red={this.state.red}
-          green={this.state.green}
-          blue={this.state.blue}
-          alpha={this.state.alpha} />
+        <h1>✨ Magic Circle ✨</h1>
+        <div className="circle-container">
+          <Controls
+            red={this.state.red}
+            green={this.state.green}
+            blue={this.state.blue}
+            alpha={this.state.alpha}
+            onRedChange={this.handleRedChange}
+            onGreenChange={this.handleGreenChange}
+            onBlueChange={this.handleBlueChange}
+            onAlphaChange={this.handleAlphaChange}
+            onRadiusChangeFromControlComponent={this.handleRadiusChange}
+            radiusOnControl={this.state.radius} />
+          <Circle
+            radius={this.state.radius}
+            red={this.state.red}
+            green={this.state.green}
+            blue={this.state.blue}
+            alpha={this.state.alpha} />
+        </div>
       </div>
     );
   }
