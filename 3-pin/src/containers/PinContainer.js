@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Pin from '../components/Pin';
 
-import '../index.css';
-
 class PinContainer extends Component {
   constructor(props) {
     super(props);

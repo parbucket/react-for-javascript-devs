@@ -2,25 +2,25 @@ import React, { Component } from 'react';
 import Bar from './Bar';
 
 class Chart extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [83,42,96,55,70,60,98,81]
-    };
-  }
   componentWillMount() {
-    const caluclatedData = this.state.data.map(d => d * 5);
+
     this.setState({
-      caluclatedData: caluclatedData
-    })
+      transformedGrades: this.props.grades.map(d => {
+        return {
+          id: d.student_id,
+          score: d.score * 5
+        }
+      }) // end of map
+    }) // end of setState
+
   }
   render() {
     return (
       <div className="chart-container">
         <h1>Beautiful Bars</h1>
         <div className="chart">
-          {this.state.caluclatedData.map(d => {
-            return <Bar grade={d} />
+          {this.state.transformedGrades.map(d => {
+            return <Bar key={d.student_id} grade={d.score} />
           })}
         </div>
       </div>
